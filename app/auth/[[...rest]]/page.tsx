@@ -4,9 +4,9 @@ export default function AuthPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <SignIn
-        routing="path"
-        path="/auth"
-        signUpUrl="/auth/sign-up"
+        routing="hash"
+        signUpUrl="/auth#/?mode=sign-up"
+        signInUrl="/auth#/?mode=sign-in"
       />
     </div>
   );
